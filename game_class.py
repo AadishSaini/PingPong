@@ -109,9 +109,9 @@ class game:
 		self.win.blit(self.score_2, (x2, y2))
 
 	def start_screen(self):
-		self.draw_text('PingPong', 70, RED, 270, 150)
-		self.draw_text('Press any key to start', 40, WHITE, 320, 250)
-		self.draw_text('Developer = Aadish Saini @karn', 30, CYAN, 500, 530)
+		self.draw_text('PingPong', 70, RED, 220, 150)
+		self.draw_text('Press any key to start', 40, WHITE, 270, 250)
+		self.draw_text('Developer = Aadish Saini @karn', 30, CYAN, 400, 530)
 		pygame.display.flip()
 		self.waiting_for_key()
 
@@ -124,10 +124,10 @@ class game:
 
 	def game_over_screen(self):
 		self.win.fill(WHITE)
-		self.draw_text('PingPong', 70, RED, 270, 150)
+		self.draw_text('PingPong', 70, RED, 240, 150)
 		self.draw_text('GAME OVER press anykey to play again', 40, RED, 80, 250)
-		self.draw_text('Developer = Aadish Saini @karn', 30, CYAN, 500, 530)
-		self.draw_text('Player1 = '+str(self.score_value), 25, CYAN, 100, 530)
+		self.draw_text('Developer = Aadish Saini @karn', 30, CYAN, 420, 530)
+		self.draw_text('Player1 = '+str(self.score_value), 25, CYAN, 70, 530)
 		self.draw_text('Player2 = '+str(self.score_value2), 25, CYAN, 250, 530)
 		pygame.display.flip()
 		self.waiting_for_key()
